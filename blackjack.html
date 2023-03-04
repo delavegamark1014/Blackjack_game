@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+
+<body>
+    <style>body {
+        background-image: url("./blackjack_table.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }</style>
+    <h2 class="dealer">Dealer: <span id ="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+        <img id="hidden" src="./cards/BACK.png">
+    </div>
+
+    <p id="results"></p>
+    
+    <h2 class="You">You: <span id="your-sum"></span></h2>
+
+<div class="cardandbet">
+    <div id="your-cards"></div>
+
+    <span id="bet-amount">0</span>
+    <span id="place-bet" onclick="startGame()">Deal</span>
+</div>
+
+    <br>
+    <button type="button" id="hit"class="btn btn-primary">Hit</button>
+    <button type="button" id="stay" class="btn btn-light">Stay</button>
+    <button type="button" id="reset" class="btn btn-success">Play Again</button>
+    <br>
+    <span id="bank">$5000</span>
+    <br>
+    <div class="chips">
+        <img onclick="bet10()"id=chip10 src="./chips/chip_10.png" alt="chip 10">
+        <img onclick="bet25()"id=chip25 src="./chips/chip_25.png" alt="chip25">
+        <img onclick="bet50()"id=chip50 src="./chips/chip_50.png" alt="chip50">
+        <img onclick="bet100()"id=chip100 src="./chips/chip_100.png" alt="chip100">
+        <img onclick="bet500()"id=chip500 src="./chips/chip_500.png" alt="chip500">
+      </div>
+
+    <script async src="blackjack.js"></script>
+</body>
+</html>

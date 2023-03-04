@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+  
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 65px;
+}
+#dealer-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    transform: translateY(-25px)
+}
+.dealer {
+    transform: translateY(-10px);
+    margin-bottom: 15px;
+}
+
+#results {
+    visibility: hidden;
+    font-size: 35px;
+    padding: 20px;
+    opacity: 0.9;
+    margin: 5px;
+    border: 3px solid rgb(223, 255, 60);
+    background-color: #ffffff;
+    filter: alpha(opacity=60);
+    height: 25px;
+    width: 140px;
+    background: url(./blackjack_table.png) repeat;
+    height: 60px;
+    display: initial;
+    font-weight: 300;
+}
+
+.cardandbet {
+    display: inline-flex;
+    padding-top: 10px;
+    transform: translate(60px,0px);
+}
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    transform: translate(35px,-15px);
+    
+}
+#bet-amount{
+    font-size: 25px;
+    width: 90px;
+    height: 50px;
+    border: 3px solid rgb(223, 255, 60);
+    padding: 10px;
+    opacity: 0.6;
+    margin: 30px;
+    background-color: #ffffff;
+    filter: alpha(opacity=60);
+    background: url(./blackjack_table.png) repeat;
+    transform: translate(80px, 5px);
+}
+
+#bet-amount span {
+    
+   margin: 5%;
+   color: yellow;
+   font-weight: bold;
+}
+#place-bet {
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(-20px, 1px);
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 70px;
+    font-size: 25px;
+
+}
+#hit {
+    visibility: hidden;
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    transform: translateY(-15px)
+   
+}
+#stay {
+    visibility: hidden;
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    transform: translateY(-15px)
+}
+#reset {
+    visibility: hidden;
+    width: 115px;
+    height: 50px;
+    font-size: 18px;
+    transform: translateY(-15px)
+}
+
+button {
+    display: inline;
+}
+
+#bank{
+    font-size: 25px;
+    border: 3px solid rgb(223, 255, 60);
+    padding: 10px;
+   opacity: 0.6;
+   margin: 30px;
+   background-color: #ffffff;
+   filter: alpha(opacity=60); /* This is for IE8 and other earlier browsers */
+   background: url("./blackjack_table.png") repeat;
+}
+
+#bank span {
+   margin: 5%;
+   font-weight: bold;
+}
+
+.chips{
+    padding-top: 30px;
+    display: inline-flex;
+    justify-content: center;
+    width:120px;
+    height:120px;
+    transform: translateY(-50);
+}
+
+  
